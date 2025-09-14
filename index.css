@@ -417,22 +417,30 @@ footer .container{
         margin-top: 0;
     }
 
-    /* Cartas responsivas mejoradas */
+    /* Cartas responsivas mejoradas - SOLUCIÓN SIMPLE */
     #nuestros-servicios .carta{
-        width: 320px; /* Reducido el ancho */
-        min-height: 480px; /* Altura mínima en lugar de fija */
-        padding: 30px 25px 25px 25px; /* Mejor distribución del padding */
+        width: 320px;
+        min-height: 480px;
+        padding: 30px 25px 80px 25px; /* Más espacio abajo para el botón */
         border-radius: 15px;
         margin: 20px;
-        display: flex; /* Flexbox para organizar contenido */
-        flex-direction: column; /* Contenido en columna */
-        justify-content: space-between; /* Distribuye el espacio */
+        position: relative; /* Para posicionar el botón */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-color: rgba(50, 50, 50, 0.9);
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         color: white;
+    }
+
+    /* Posiciona el botón en la parte inferior en desktop */
+    .carta button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%); /* Centra horizontalmente */
+        font-size: 1.2em;
+        padding: 12px 20px;
     }
 
     .carta:first-child{
