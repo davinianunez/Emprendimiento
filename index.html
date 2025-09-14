@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CRONOS</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+           <div class="container">
+                <p class="logo">Cronos</p>
+                <nav>
+                    <a href="#somos-cronos">Sobre Nosotros</a>
+                    <a href="#nuestros-servicios">Nuestros Servicios</a>
+                    <a href="#Características">Características</a>
+                    <a href="#business-tools">Business Tools</a> 
+
+                 </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <h1>Bienvenido a Cronos <br>soluciones financieras y servicios de páginas web</h1>
+            <!-- Botón con enlace a WhatsApp -->
+            <a href="https://wa.me/59179056072" target="_blank">
+                <button>Contáctanos</button>
+            </a>
+        </section>
+
+        <section id="somos-cronos">
+            <div class="container">
+                <div class="img-container"></div>
+                <div class="texto">
+                    <h2>Somos <span class="color-acento">Cronos!</span></h2>
+                    <p>En Cronos, nos especializamos en brindar soluciones financieras integrales y servicios de desarrollo web personalizados. Nuestro equipo de expertos está dedicado a ayudar a nuestros clientes a alcanzar sus objetivos financieros y digitales con estrategias innovadoras y tecnología de vanguardia.</p>
+                </div>
+            </div>        
+        </section>
+
+        <section id="nuestros-servicios">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="servicios">
+                    <div class="carta">
+                        <h3>Asesoría Personal</h3>
+                        <p>Ofrecemos asesoría personalizada para individuos, ayudándoles a gestionar sus finanzas y proyectos personales de manera efectiva para alcanzar sus metas.</p>
+                        <a href="https://wa.me/59171080195?text=Hola%2C%20quiero%20más%20información%20sobre%20Asesoría%20Financiera" target="_blank">
+                        <button>Más Información</button>
+                        </a>
+                    </div>
+
+                    <div class="carta"> 
+                        <h3>Desarrollo Web</h3>
+                        <p>Brindamos servicios de desarrollo de páginas web a medida, creando sitios modernos y funcionales que se adaptan a las necesidades específicas de nuestros clientes.</p> 
+                        <a href="https://wa.me/59179056072?text=Hola%2C%20quiero%20más%20información%20sobre%20Desarrollo%20Web" target="_blank">
+                        <button>Más Información</button>
+                        </a>
+                    </div>
+
+                    <div class="carta">
+                        <h3>Asesoría para PYMES</h3>
+                        <p>Ofrecemos asesoría especializada para pequeñas y medianas empresas, ayudándolas a optimizar sus procesos y mejorar su rentabilidad.</p>
+                        <a href="https://wa.me/59163531828?text=Hola%2C%20quiero%20más%20información%20sobre%20Asesoría%20PYMES" target="_blank">
+                        <button>Más Información</button>
+                        </a>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section id="Características">
+            <div class="container">
+                <ul>
+                    <li>✅Experiencia y Profesionalismo</li>
+                    <li>✅Trabajo virtual y presencial</li>
+                    <li>✅Soluciones Personalizadas</li>
+                    <li>✅Atención al Cliente</li>
+                    <li>✅Innovación y Tecnología</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="business-tools">
+    <div class="container">
+        <h2>Business Tools</h2>
+        <div class="tools-grid">
+            <!-- Calculadora financiera -->
+            <div class="tool-card" id="finance-tool">
+                <h3>Calculadora de Ahorro</h3>
+                <label>Monto inicial:</label>
+                <input type="number" id="initial" placeholder="Bs.">
+                <label>Ahorro mensual:</label>
+                <input type="number" id="monthly" placeholder="Bs.">
+                <label>Meses:</label>
+                <input type="number" id="months" placeholder="Cantidad">
+                <button onclick="calcSavings()">Calcular</button>
+                <p id="result-finance"></p>
+            </div>
+            <!-- Test PYMES -->
+            <div class="tool-card" id="diagnosis-tool">
+                <h3>Test Diagnóstico PYMES</h3>
+                <form id="pyme-test">
+                    <label>¿Controlas tus gastos mensualmente?</label>
+                    <select><option>Sí</option><option>No</option></select>
+                    <label>¿Tienes metas de ventas claras?</label>
+                    <select><option>Sí</option><option>No</option></select>
+                    <label>¿Utilizas tecnología para tu gestión?</label>
+                    <select><option>Sí</option><option>No</option></select>
+                    <label>¿Capacitas a tu equipo regularmente?</label>
+                    <select><option>Sí</option><option>No</option></select>
+                    <button type="button" onclick="calcPymeScore()">Diagnosticar</button>
+                </form>
+                <p id="result-pyme"></p>
+            </div>
+            <!-- Chatbot/Whatsapp -->
+            <div class="tool-card" id="chatbot-tool">
+                <h3>Chatbot de Desarrollo Web</h3>
+                <p>¿Tienes dudas o quieres agendar desarrollo web?</p>
+                <button onclick="window.open('https://wa.me/59179056072?text=Hola%2C%20quiero%20agendar%20una%20consulta%20de%20Desarrollo%20Web', '_blank')">¡Chatea ahora!</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="final">
+            <h2>Listo para llevar tu negocio al siguiente nivel?</h2>
+            <!-- Botón final con enlace a WhatsApp -->
+            <a href="https://wa.me/59179056072" target="_blank">
+                <button>Contáctanos</button>
+            </a>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; Cronos 2025</p>
+            </div>
+        </footer>
+
+        <script>
+            // Calculadora financiera de ahorro/presupuesto
+function calcSavings() {
+    const initial = parseFloat(document.getElementById('initial').value) || 0;
+    const monthly = parseFloat(document.getElementById('monthly').value) || 0;
+    const months = parseInt(document.getElementById('months').value) || 0;
+    const total = initial + (monthly * months);
+    document.getElementById('result-finance').innerText =
+        `Tendrás Bs.${total.toFixed(2)} al cabo de ${months} meses.`;
+}
+
+// Test diagnóstico PYME mejorado con consejos
+function calcPymeScore() {
+    const selects = document.querySelectorAll('#pyme-test select');
+    let score = 0;
+    selects.forEach(s => { if(s.value === "Sí") score++; });
+
+    let msg = "";
+    let consejos = "";
+
+    if(score === 4) {
+        msg = "¡Excelente! Tu empresa es muy eficiente.";
+        consejos = `<ul>
+            <li>¡Sigue así! Mantente innovando y capacitando a tu equipo.</li>
+            <li>Revisa periódicamente tus procesos para detectar mejoras.</li>
+            <li>Considera expandir tus metas y buscar nuevos mercados.</li>
+        </ul>`;
+    } else if(score >= 2) {
+        msg = "Bien, pero hay áreas para mejorar.";
+        consejos = `<ul>
+            <li>Analiza los puntos donde tu empresa contestó 'No' y busca soluciones.</li>
+            <li>Establece metas claras y monitorea resultados regularmente.</li>
+            <li>Considera digitalizar procesos para mayor eficiencia.</li>
+            <li>Capacita a tu equipo en nuevas tecnologías y gestión.</li>
+        </ul>`;
+    } else {
+        msg = "Necesitas trabajar en la eficiencia de tu empresa.";
+        consejos = `<ul>
+            <li>Implementa controles de gastos mensuales para evitar fugas financieras.</li>
+            <li>Define objetivos de ventas y estrategias claras.</li>
+            <li>Adopta herramientas tecnológicas de gestión.</li>
+            <li>Invierte en la formación del equipo para mejorar resultados.</li>
+            <li>¡Puedes contactarnos para asesoría personalizada!</li>
+        </ul>`;
+    }
+    document.getElementById('result-pyme').innerHTML = `<strong>${msg}</strong><br>${consejos}`;
+}
+        </script>
+    </body>
+</html>
