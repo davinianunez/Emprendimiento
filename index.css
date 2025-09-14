@@ -162,7 +162,13 @@ header a:hover{
     ), url("INGENIERIA.jpeg");
 }
 
-/* Estilos específicos para el contenido de las cartas */
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("CONTAGABO.webp");
+}
 .carta .content {
     flex-grow: 1; /* El contenido ocupa el espacio disponible */
     display: flex;
@@ -414,16 +420,43 @@ footer .container{
     /* Cartas responsivas mejoradas */
     #nuestros-servicios .carta{
         width: 320px; /* Reducido el ancho */
-        height: 400px; /* Reducida la altura */
-        padding: 30px; /* Reducido el padding */
+        min-height: 480px; /* Altura mínima en lugar de fija */
+        padding: 30px 25px 25px 25px; /* Mejor distribución del padding */
         border-radius: 15px;
         margin: 20px;
+        display: flex; /* Flexbox para organizar contenido */
+        flex-direction: column; /* Contenido en columna */
+        justify-content: space-between; /* Distribuye el espacio */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-color: rgba(50, 50, 50, 0.9);
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         color: white;
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("CONTAJ.jpeg");
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("INGENIERIA.jpeg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("CONTAGABO.webp");
     }
 
     #Características{
